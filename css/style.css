@@ -63,19 +63,23 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:white;
+    background-color:black;
     height: 48vh;
 }
 
 .heroTag{
     font-size: 120px;
     font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Trade Winds', cursive;
+    line-height: .7;
+    color:hotpink;
 }
 
 .heroTag span{
     font-size: 36px;
     font-family: 'PT Sans Narrow', sans-serif;
     display: block;
+    color: whitesmoke;
 
 }
 
@@ -102,7 +106,7 @@ body{
 }
 
 body.musicShow{
-    background-color: teal;
+    background-color:#110D17;
 }
 
 h1{
@@ -134,7 +138,7 @@ h1{
 }
 
 .eventInfo{
-    border-top:8px solid teal;
+    border-top:8px solid hotpink;
     list-style: none;
 }
 
@@ -145,7 +149,7 @@ h1{
     padding:16px 8px;
     display: flex;
     flex-direction: column;
-    border-top:8px solid teal;
+    border-top:8px solid hotpink;
 }
 .eventInfo li span{
     color:gray;
@@ -165,6 +169,10 @@ h1{
 .eventDate{
     border:1px solid gainsboro;
     font-size:inherit;
+}
+.eventBarcode{
+    font-size:24px;
+    font-family: 'Libre Barcode 128', cursive;
 }
 
 
