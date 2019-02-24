@@ -1,0 +1,173 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
+
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    height: 48vh;
+}
+
+.heroTag{
+    font-size: 120px;
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.heroTag span{
+    font-size: 36px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: block;
+
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Abril Fatface', sans-serif;
+    background-color: black;
+    position: fixed bottom;
+
+}
+nav a{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    padding:24px 16px;
+
+}
+
+body{
+    font-size: 16px;
+}
+
+body.musicShow{
+    background-color: teal;
+}
+
+h1{
+}
+
+.sectionTitle{
+    font-size: 64px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 16px 0;
+    color:white;
+    grid-column: 1 / 6;
+}
+
+.musicShowList{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding:48px;
+}
+
+.eventItem{
+    background-color: white;
+    padding:16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.summaryTitle{
+    font-family: 'Abril Fatface', sans-serif;
+    font-size:24px;
+}
+
+.eventInfo{
+    border-top:8px solid teal;
+    list-style: none;
+}
+
+.eventInfo li{
+    color:black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    padding:16px 8px;
+    display: flex;
+    flex-direction: column;
+    border-top:8px solid teal;
+}
+.eventInfo li span{
+    color:gray;
+    font-size:16px;
+}
+
+
+.eventCity{
+    border:1px solid gainsboro;
+    font-size:inherit;
+
+}
+.eventVenue{
+    border:1px solid gainsboro;
+    font-size:inherit;
+}
+.eventDate{
+    border:1px solid gainsboro;
+    font-size:inherit;
+}
+
+
+p{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
