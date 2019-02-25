@@ -21,19 +21,34 @@
         <a href="#">Cronological</a>
         <a href="#">Why?</a>
     </nav>
-    <section class="musicShowList">
-        <h1 class="sectionTitle">Music shows I've been to</h1>
+    <section id="beenthereApp" class="musicShowList">
+        <h1 class="sectionTitle">{{typeOfShow}} I've been to</h1>
 
         <details class="eventItem">
-            <summary class="summaryTitle">PXDX - 2015</summary>
+            <summary class="summaryTitle">{{eventName}} - 2015</summary>
             <ul class="eventInfo">
-                <li class="eventCity"><span>City:</span> Ciudad de México</li>
-                <li class="eventVenue"><span>Venue:</span> Teatro Metropolitan</li>
-                <li class="eventDate"><span>Date:</span><time datetime="2015-09-26"> September 26 2015</time></li>
+                <li class="eventCity"><span>City:</span>{{eventCity}}</li>
+                <li class="eventVenue"><span>Venue:</span> {{eventVenue}} Metropolitan</li>
+                <li class="eventDate"><span>Date:</span><time datetime="2015-09-26">{{eventDate}}</time></li>
             </ul>
-            <p class="eventBarcode">PXDX09262015</p>
+            <p class="eventBarcode">{{eventName}}{{eventDate}}</p>
         </details>
 
     </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.min.js"></script>
+<script>
+    new Vue({
+        el:'#beenthereApp',
+        data:{
+            typeOfShow:'Music Shows',
+            eventName:'PXDX',
+            eventCity: 'Ciudad de México',
+            eventVenue: 'Teatro Metropolitan',
+            eventDate:'September 26 2015'
+        }
+    });
+</script>
+
 </body>
 </html>
