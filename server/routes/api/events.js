@@ -22,7 +22,12 @@ router.get('/', async (req, res) => {
 router.get('/', async (req, res) => {
     const Events = await loadEventsCollection();
     await Events.insertOne({
-            "typeOfShow": req.body.typeOfShow
+            "typeOfShow": req.body.typeOfShow ,
+            "tosClass": req.body.tosClass ,
+            "eventName": req.body.eventName,
+            "eventCity": req.body.eventCity,
+            "eventVenue": req.body.eventVenue,
+            "eventDate": req.body.eventDate
         });
         res.status(201).send();
 });
