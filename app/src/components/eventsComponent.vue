@@ -5,8 +5,8 @@
         <p class="error" v-if="error">{{ error }}</p>
 
         <details class="eventItem" :class="event.tosClass"
-        v-for="event in events"
-        v-bind:key="event._id"
+        v-for="(event, idx) in events"
+        :key="idx"
         >
             <summary class="summaryTitle">{{event.eventName}}</summary>
             <ul class="eventInfo">
@@ -21,9 +21,7 @@
 </template>
 
 <script>
-
-import eventsService from '../eventsService';
-
+import { db } from '../main'
 export default {
   name: 'eventsComponent',
   data() {
@@ -32,12 +30,13 @@ export default {
       error:'',
     }
   },
-      async created() {
-      this.events = await eventsService.getEvents();
-    },
+   firestore () {
+    return {
+      events: db.collection('events').orderBy('eventDate')
+    }
+  },
     catch(err){
     this.error = err.message;
     }
-
 }
 </script>
