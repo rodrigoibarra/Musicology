@@ -1,7 +1,7 @@
 <template>
   <div class="home">
       <header>
-          <h1 class="heroHeader">Hey, welcome to Been There.</h1>
+          <h1 class="heroHeader">Hey, welcome to Apollo.</h1>
           <p class="heroText">A place where I track most of the shows or events I've attended.</p>
       </header>
       <section class="byTheNumbers">
