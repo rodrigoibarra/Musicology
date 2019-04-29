@@ -20,6 +20,8 @@ time, mark, audio, video {
 }
 
 body {
+    font-size:22px;
+    font-family: 'Rokkitt', serif;
     line-height:1;
 }
 
@@ -61,25 +63,11 @@ input, select {
 
 header{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:black;
+    background-color:#242430;
     height: 48vh;
-}
-
-.heroTag{
-    font-size: 120px;
-    font-family: 'Trade Winds', sans-serif;
-    line-height: .7;
-    color:hotpink;
-}
-
-.heroTag span{
-    font-size: 36px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    display: block;
-    color: whitesmoke;
-
 }
 
 nav{
@@ -100,107 +88,68 @@ nav a{
 
 }
 
-body{
-    font-size: 16px;
-}
-
-body.musicShow{
-    background-color:#110D17;
-}
-
 h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    width: 100%;
+    padding:3em 0;
+}
+.heroHeader{
+    font-size: 3.2em;
+    color:#01B888;
+
+}
+.heroText{
+    font-size: 1.8em;
+    color:white;
+    font-family: 'Rokkitt', serif;
 }
 
 .sectionTitle{
-    font-size: 64px;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 16px 0;
-    color:white;
-    grid-column: 1 / 4;
+    grid-column: 2 / 8;
 }
 
 
-
-
-.musicShowList{
-    display: grid;
-    grid-gap: .5em;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-    padding:48px;
+.whySection{
+    background-color: #FFEF6B;
 }
-
-.eventItem{
-    background-color: white;
-    padding:16px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.festival{
-    color:black;
-    font-family: 'Trade Winds', sans-serif;
-}
-
-.musicShow{
-    background-color: yellow ;
-    color: black;
-    font-family: 'Trade Winds', sans-serif;
-}
-
-.sports{
-    background-color: limegreen;
-    color:black;
-
-}
-
-.others {
-    border-top:8px solid steelblue;
-    color:black;
-}
-
-
-
-.summaryTitle{
-    font-family: inherit;
-    font-size:24px;
-}
-
-.eventInfo{
-    list-style: none;
-}
-
-.eventInfo li{
-    color:black;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 24px;
-    padding:16px 8px;
-    display: flex;
-    flex-direction: column;
-}
-.eventInfo li span{
-    color:gray;
-    font-size:16px;
-}
-
-
-.eventCity{
-    border:1px solid gainsboro;
-    font-size:inherit;
-
-}
-.eventVenue{
-    border:1px solid gainsboro;
-    font-size:inherit;
-}
-.eventDate{
-    border:1px solid gainsboro;
-    font-size:inherit;
-}
-.eventBarcode{
-    font-size:24px;
-    font-family: 'Libre Barcode 128', cursive;
-}
-
 
 p{
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2em;
+    grid-column: 2 / 6;
+
 }
+
+
+.stats{
+    margin: 2em 0;
+    padding: 1.3em;
+    grid-column: 2 / 7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.data{
+    text-align: center;
+}
+
+.eventStat{
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 4.8em;
+    color:#03C5FF;
+}
+a.typeOfEvent{
+    font-size: 1.3em;
+    color:#242430;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
