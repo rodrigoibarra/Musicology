@@ -1,8 +1,8 @@
 <template>
   <div class="home">
       <header>
-          <h1 class="heroHeader">Hey, welcome to Apollo.</h1>
-          <p class="heroText">A place where I track most of the shows or events I've attended.</p>
+          <h1 class="heroHeader">Hey, welcome to Meret.</h1>
+          <p class="heroText">A compendium of shows, festivals & events I’ve been to.</p>
       </header>
       <section class="byTheNumbers">
           <h2 class="sectionTitle theData">The data</h2>

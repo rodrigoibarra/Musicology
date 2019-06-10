@@ -154,3 +154,27 @@ a.typeOfEvent{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+
+
+.footer{
+    background: #0E1C3F;
+    color:white;
+    padding:2%;
+    font-size: .65em;
+}
+.footerFlex{
+    display: flex;
+    font-family: roboto;
+    font-weight: 100;
+    margin-bottom: 2em;
+}
+
+.footerFlex a{
+    color: #FFEF6B;
+}
+
+.footer_title{
+    text-decoration: #FFEF6B underline;
+    margin-bottom: 1em;
+}
